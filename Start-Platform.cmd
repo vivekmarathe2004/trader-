@@ -1,0 +1,3 @@
+@echo off
+title Launching AI Quantitative Trading Platform...
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0start.ps1"

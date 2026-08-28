@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #06080E;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.035) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.025) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(168, 85, 247, 0.02) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: #F0F6FC;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Custom AMOLED Dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.4);
+}
+
+/* Hardware-accelerated fluid transitions */
+.gpu-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
